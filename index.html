@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dawid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="logo">
+            <span class="logo-dot"></span> Dawid
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#creative">Twórczość</a></li>
+            <li><a href="#contact" class="btn-nav">Kontakt</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <h1>Jestem <span class="highlight">Dawid</span> — to moje projekty</h1>
+            <p>Programista, twórca gier, artysta i działacz. Zobacz, co udało mi się stworzyć przez lata nauki i pasji.</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">Przeglądaj galerię</a>
+                <a href="#contact" class="btn btn-outline">Porozmawiajmy</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <span class="tag">Portfolio</span>
+            <h2>Wybrane prace</h2>
+        </div>
+
+        <div class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-filter="all">Wszystkie</button>
+            <button class="filter-btn" data-filter="aplikacja-mobilna">Aplikacja mobilna</button>
+            <button class="filter-btn" data-filter="strona-internetowa">Strona internetowa</button>
+            <button class="filter-btn" data-filter="game-dev">Game dev</button>
+            <button class="filter-btn" data-filter="aplikacja-internetowa">Aplikacja internetowa</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Dynamicznie z script.js -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <span class="tag">O mnie</span>
+            <h2>Pasja do kodu i nie tylko</h2>
+        </div>
+        <p>
+            Jestem programistą z ponad 5-letnim doświadczeniem. Specjalizuję się w tworzeniu aplikacji webowych, mobilnych i gier. 
+            Ukończyłem kursy Pygame i web designu w Kodland, a przez 6 lat tworzyłem gry w Unity – w tym własną fizykę i system poruszania. 
+            Po godzinach piszę wiersze i książkę, tworzę pixel art, modele w Blenderze i rysuję ołówkiem. 
+            Aktywnie działam w Stowarzyszeniu „Siła Młodych”, współorganizując m.in. wydarzenie Euro Orbita.
+        </p>
+        <div class="stats-row">
+            <div class="stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Projektów</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Zadowolonych klientów</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Lat doświadczenia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Section -->
+    <section class="creative-section" id="creative">
+        <div class="section-header">
+            <span class="tag">Moja twórczość</span>
+            <h2>Pisarz, artysta, muzyk</h2>
+        </div>
+
+        <div class="creative-grid">
+            <!-- Pisarstwo -->
+            <div class="creative-card writing-card">
+                <h3>📖 Wiersze i książka</h3>
+                <p>Piszę wiersze i pracuję nad powieścią. Tutaj możesz wkleić fragmenty swoich utworów.</p>
+                <div class="writing-placeholder" contenteditable="true">
+                    <em>Wklej tutaj swój wiersz lub fragment książki…</em>
+                </div>
+            </div>
+
+            <!-- Pixel Art -->
+            <div class="creative-card">
+                <h3>🕹️ Pixel Art</h3>
+                <div class="mini-gallery" id="pixelGallery">
+                    <!-- Obrazki podmienisz w script.js -->
+                </div>
+            </div>
+
+            <!-- Blender -->
+            <div class="creative-card">
+                <h3>🧊 Blender 3D</h3>
+                <div class="mini-gallery" id="blenderGallery"></div>
+            </div>
+
+            <!-- Rysunek tradycyjny -->
+            <div class="creative-card">
+                <h3>✏️ Rysunek ołówkiem</h3>
+                <div class="mini-gallery" id="drawingGallery"></div>
+            </div>
+        </div>
+
+        <!-- Muzyka i montaż -->
+        <div class="creative-extra">
+            <div class="creative-card">
+                <h3>🎵 Muzyka (Reaper)</h3>
+                <p>Początkujący producent muzyczny. Moje pierwsze próby – wstaw linki do utworów.</p>
+                <audio controls style="width:100%; margin-top:1rem;">
+                    <source src=" " type="audio/mpeg">
+                    Twoja przeglądarka nie obsługuje audio.
+                </audio>
+                <p class="hint">(Wstaw własny plik audio lub link)</p>
+            </div>
+            <div class="creative-card">
+                <h3>🎬 Montaż filmów (DaVinci Resolve)</h3>
+                <p>Amatorski montaż. Przykładowy film – wstaw link do YouTube lub Vimeo.</p>
+                <div class="video-placeholder">
+                    <iframe width="100%" height="200" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="hint">(Wstaw link do własnego wideo)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <span class="tag">Kontakt</span>
+            <h2>Napisz do mnie</h2>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Twoje imię" required>
+            <input type="email" placeholder="Twój email" required>
+            <textarea placeholder="Opisz swój projekt..." required></textarea>
+            <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Dawid. Tworzone z pasją. <a href="#hero">Do góry ↑</a></p>
+    </footer>
+
+    <!-- Lightbox dla galerii głównej -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+        <div class="lightbox-content" id="lightboxContent">
+            <img src="" alt="" id="lightboxImg">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
