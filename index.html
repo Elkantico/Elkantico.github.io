@@ -111,7 +111,7 @@
             <div class="creative-card">
                 <h3>🕹️ Pixel Art</h3>
                 <div class="mini-gallery" id="pixelGallery">
-                    <!-- Obrazki podmienisz w script.js -->
+                    <!-- Obrazki w script.js -->
                 </div>
             </div>
 
@@ -150,25 +150,38 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="section-header">
-            <span class="tag">Kontakt</span>
-            <h2>Napisz do mnie</h2>
+    <!-- Stopka z kontaktem -->
+    <footer class="footer-contact" id="contact">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h3>Dawid</h3>
+                <p>Programista, twórca gier, artysta.<br>Otwarty na współpracę i nowe projekty.</p>
+                <div class="footer-details">
+                    <span>📧 dawid@example.com</span>
+                    <span>📱 +48 123 456 789</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#" title="GitHub">🐙</a>
+                    <a href="#" title="LinkedIn">🔗</a>
+                    <a href="#" title="Instagram">📷</a>
+                </div>
+            </div>
+            <div class="footer-form">
+                <h4>Napisz do mnie</h4>
+                <form id="contactForm">
+                    <input type="text" placeholder="Twoje imię" required>
+                    <input type="email" placeholder="Twój email" required>
+                    <textarea placeholder="Twoja wiadomość..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Wyślij</button>
+                </form>
+            </div>
         </div>
-        <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="Twoje imię" required>
-            <input type="email" placeholder="Twój email" required>
-            <textarea placeholder="Opisz swój projekt..." required></textarea>
-            <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 Dawid. Tworzone z pasją. <a href="#hero">Do góry ↑</a></p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dawid. Tworzone z pasją. <a href="#hero">Do góry ↑</a></p>
+        </div>
     </footer>
 
-    <!-- Lightbox dla galerii głównej -->
+    <!-- Lightbox (popup z wieloma zdjęciami) -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightboxClose">&times;</button>
         <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
@@ -176,7 +189,11 @@
         <div class="lightbox-content" id="lightboxContent">
             <img src="" alt="" id="lightboxImg">
         </div>
-        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-info">
+            <div class="lightbox-title" id="lightboxTitle"></div>
+            <div class="lightbox-description" id="lightboxDescription"></div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>

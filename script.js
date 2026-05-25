@@ -1,10 +1,14 @@
-// ─── DANE PROJEKTÓW ──────────────────────────
+// ─── DANE PROJEKTÓW (wiele zdjęć na projekt) ────
 const galleryItems = [
     {
         id: 1,
         title: 'Chronossos',
         category: 'aplikacja-mobilna',
-        src: 'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos',
+        images: [
+            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+1',
+            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+2',
+            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+3'
+        ],
         alt: 'Aplikacja habit tracker',
         description: 'Aplikacja mobilna typu habit tracker z zaawansowanym task managementem, kalendarzem, clipboardem i wieloma opcjami planowania. Projekt personalny.'
     },
@@ -12,7 +16,10 @@ const galleryItems = [
         id: 2,
         title: 'All About Safety',
         category: 'game-dev',
-        src: 'https://placehold.co/800x600/1a1a25/00cec9?text=All+About+Safety',
+        images: [
+            'https://placehold.co/800x600/1a1a25/00cec9?text=All+About+Safety+1',
+            'https://placehold.co/800x600/1a1a25/00cec9?text=All+About+Safety+2'
+        ],
         alt: 'Gra dyspozytora',
         description: 'Gra, w której gracz wciela się w dyspozytora. Podejmujesz decyzje, zarządzasz kryzysami i dbasz o bezpieczeństwo. Stworzona w Unity.'
     },
@@ -20,7 +27,11 @@ const galleryItems = [
         id: 3,
         title: 'WLC Włocławek',
         category: 'strona-internetowa',
-        src: 'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+W%C5%82oc%C5%82awek',
+        images: [
+            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+1',
+            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+2',
+            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+3'
+        ],
         alt: 'Strona klubu',
         description: 'Przez 2 miesiące utrzymywałem i rozwijałem stronę internetową Włocławskiego Klubu (barter). Aktualizacje treści, poprawki techniczne.'
     },
@@ -28,7 +39,10 @@ const galleryItems = [
         id: 4,
         title: 'Strona dla mechanika',
         category: 'strona-internetowa',
-        src: 'https://placehold.co/800x600/1a1a25/e17055?text=Mechanik',
+        images: [
+            'https://placehold.co/800x600/1a1a25/e17055?text=Mechanik+1',
+            'https://placehold.co/800x600/1a1a25/e17055?text=Mechanik+2'
+        ],
         alt: 'Wizytówka warsztatu',
         description: 'Prosta, nowoczesna strona-wizytówka dla warsztatu samochodowego. Zawiera galerię, cennik i formularz kontaktowy.'
     },
@@ -36,7 +50,10 @@ const galleryItems = [
         id: 5,
         title: 'Praktyki e-commerce',
         category: 'aplikacja-internetowa',
-        src: 'https://placehold.co/800x600/1a1a25/74b9ff?text=E-commerce',
+        images: [
+            'https://placehold.co/800x600/1a1a25/74b9ff?text=E-commerce+1',
+            'https://placehold.co/800x600/1a1a25/74b9ff?text=E-commerce+2'
+        ],
         alt: 'Inkubator finansowy',
         description: '2‑miesięczne praktyki w inkubatorze finansowym we Włocławku. Tworzyłem nowe rozwiązania i automatyzacje (skrypty Python) dla e‑commerce.'
     },
@@ -44,7 +61,11 @@ const galleryItems = [
         id: 6,
         title: 'Unity – własna fizyka',
         category: 'game-dev',
-        src: 'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka',
+        images: [
+            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+1',
+            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+2',
+            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+3'
+        ],
         alt: 'System poruszania',
         description: 'Przez 6 lat tworzyłem gry w Unity. Opracowałem własny system fizyki i assetów do poruszania się postaci – wykorzystywany w kilku prototypach.'
     },
@@ -52,7 +73,10 @@ const galleryItems = [
         id: 7,
         title: 'Finn & Bones (przeglądarkowa)',
         category: 'game-dev',
-        src: 'https://placehold.co/800x600/1a1a25/ff7675?text=Finn+%26+Bones',
+        images: [
+            'https://placehold.co/800x600/1a1a25/ff7675?text=Finn%26Bones+1',
+            'https://placehold.co/800x600/1a1a25/ff7675?text=Finn%26Bones+2'
+        ],
         alt: 'Gra przeglądarkowa',
         description: 'Gra przeglądarkowa inspirowana starą produkcją Finn & Bones. Zręcznościowa, z elementami logicznymi, napisana w JavaScript.'
     },
@@ -60,7 +84,10 @@ const galleryItems = [
         id: 8,
         title: 'Strona z jedzeniem',
         category: 'strona-internetowa',
-        src: 'https://placehold.co/800x600/1a1a25/55efc4?text=Food+Project',
+        images: [
+            'https://placehold.co/800x600/1a1a25/55efc4?text=Food+1',
+            'https://placehold.co/800x600/1a1a25/55efc4?text=Food+2'
+        ],
         alt: 'Projekt kulinarny',
         description: 'Personalny projekt strony do zamawiania jedzenia. Responsywny design, interaktywne menu i integracja z systemem zamówień.'
     },
@@ -68,7 +95,11 @@ const galleryItems = [
         id: 9,
         title: 'Aplikacja TikTok+YT',
         category: 'aplikacja-mobilna',
-        src: 'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT',
+        images: [
+            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+1',
+            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+2',
+            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+3'
+        ],
         alt: 'Aplikacja społecznościowa',
         description: 'Aplikacja mobilna łącząca funkcje TikToka i YouTube. Wkrótce kontraktowanie z gazetami. Projekt w trakcie rozwoju.'
     },
@@ -76,7 +107,10 @@ const galleryItems = [
         id: 10,
         title: 'System głosowań Euro Orbita',
         category: 'aplikacja-internetowa',
-        src: 'https://placehold.co/800x600/1a1a25/81ecec?text=Euro+Orbita',
+        images: [
+            'https://placehold.co/800x600/1a1a25/81ecec?text=Euro+Orbita+1',
+            'https://placehold.co/800x600/1a1a25/81ecec?text=Euro+Orbita+2'
+        ],
         alt: 'Symulacja parlamentu',
         description: 'System do głosowania na symulacje Sejmu i Senatu (Euro Orbita). Obsługuje ~300 uczestników, bezpieczny i wydajny backend (web app).'
     },
@@ -84,7 +118,10 @@ const galleryItems = [
         id: 11,
         title: 'Śledzenie wydarzeń – Siła Młodych',
         category: 'aplikacja-mobilna',
-        src: 'https://placehold.co/800x600/1a1a25/dfe6e9?text=Si%C5%82a+M%C5%82odych',
+        images: [
+            'https://placehold.co/800x600/1a1a25/dfe6e9?text=Si%C5%82a+M%C5%82odych+1',
+            'https://placehold.co/800x600/1a1a25/dfe6e9?text=Si%C5%82a+M%C5%82odych+2'
+        ],
         alt: 'Event tracker',
         description: 'Aplikacja do śledzenia wydarzeń dla Stowarzyszenia „Siła Młodych”. Powiadomienia, kalendarz i lista uczestników.'
     }
@@ -109,35 +146,31 @@ const drawingImages = [
 function fillMiniGallery(containerId, images) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    container.innerHTML = images.map(img => 
-        `<img src="${img.src}" alt="${img.alt}" loading="lazy" onclick="openMiniLightbox('${img.src}')">`
+    container.innerHTML = images.map(img =>
+        `<img src="${img.src}" alt="${img.alt}" loading="lazy" onclick="window.open('${img.src}', '_blank')">`
     ).join('');
 }
-
-// Prosty lightbox dla mini galerii (otwiera obrazek w nowym oknie)
-window.openMiniLightbox = function(src) {
-    window.open(src, '_blank');
-};
-
-// Wypełnij mini galerie
 fillMiniGallery('pixelGallery', pixelArtImages);
 fillMiniGallery('blenderGallery', blenderImages);
 fillMiniGallery('drawingGallery', drawingImages);
 
-// ─── RESZTA LOGIKI (GALERIA GŁÓWNA, FILTRY, LIGHTBOX) ───
+// ─── GŁÓWNA GALERIA ─────────────────────────
 const galleryGrid = document.getElementById('galleryGrid');
 const filterBar = document.getElementById('filterBar');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
-const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxTitle = document.getElementById('lightboxTitle');
+const lightboxDescription = document.getElementById('lightboxDescription');
+const lightboxCounter = document.getElementById('lightboxCounter');
 const lightboxClose = document.getElementById('lightboxClose');
 const lightboxPrev = document.getElementById('lightboxPrev');
 const lightboxNext = document.getElementById('lightboxNext');
 const lightboxContent = document.getElementById('lightboxContent');
 
 let currentFilter = 'all';
-let currentLightboxIndex = 0;
 let filteredItems = [];
+let currentProjectIndex = -1;
+let currentImageIndex = 0;
 
 function renderGallery(filter = 'all') {
     currentFilter = filter;
@@ -145,15 +178,17 @@ function renderGallery(filter = 'all') {
         ? [...galleryItems]
         : galleryItems.filter(item => item.category === filter);
 
-    galleryGrid.innerHTML = filteredItems.map((item, index) => `
+    galleryGrid.innerHTML = filteredItems.map((item, index) => {
+        const thumbSrc = item.images[0];  // pierwsze zdjęcie jako miniatura
+        return `
         <div class="gallery-item" data-index="${index}">
-            <img src="${item.src}" alt="${item.alt}" loading="lazy">
+            <img src="${thumbSrc}" alt="${item.alt}" loading="lazy">
             <div class="gallery-item-overlay">
                 <h3>${item.title}</h3>
                 <span class="cat-tag">${item.category.replace('-', ' ')}</span>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 
     document.querySelectorAll('.gallery-item').forEach(el => {
         el.addEventListener('click', () => {
@@ -171,36 +206,53 @@ filterBar.addEventListener('click', (e) => {
     }
 });
 
-function openLightbox(index) {
-    currentLightboxIndex = index;
+// ─── LIGHTBOX ───────────────────────────────
+function openLightbox(projectIdx) {
+    currentProjectIndex = projectIdx;
+    currentImageIndex = 0;
     updateLightboxContent();
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
 }
+
 function closeLightbox() {
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
+    currentProjectIndex = -1;
 }
+
 function updateLightboxContent() {
-    if (filteredItems.length === 0) return;
-    const item = filteredItems[currentLightboxIndex];
-    lightboxImg.src = item.src;
-    lightboxImg.alt = item.alt;
-    lightboxCaption.innerHTML = `<strong>${item.title}</strong><br><span style="font-size:0.85rem; opacity:0.9;">${item.description}</span>`;
+    if (currentProjectIndex === -1 || filteredItems.length === 0) return;
+    const project = filteredItems[currentProjectIndex];
+    const imageCount = project.images.length;
+
+    lightboxImg.src = project.images[currentImageIndex];
+    lightboxImg.alt = project.alt;
+    lightboxTitle.textContent = project.title;
+    lightboxDescription.textContent = project.description;
+    lightboxCounter.textContent = `${currentImageIndex + 1} / ${imageCount}`;
 }
+
 function navigateLightbox(direction) {
-    if (filteredItems.length === 0) return;
-    currentLightboxIndex = (currentLightboxIndex + direction + filteredItems.length) % filteredItems.length;
+    if (currentProjectIndex === -1) return;
+    const project = filteredItems[currentProjectIndex];
+    const imageCount = project.images.length;
+    currentImageIndex = (currentImageIndex + direction + imageCount) % imageCount;
+
     lightboxContent.style.animation = 'none';
     lightboxContent.offsetHeight;
     lightboxContent.style.animation = 'zoomIn 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+
     updateLightboxContent();
 }
 
-lightboxClose.addEventListener('click', closeLightbox);
 lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
 lightboxNext.addEventListener('click', () => navigateLightbox(1));
-lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
 document.addEventListener('keydown', (e) => {
     if (!lightbox.classList.contains('open')) return;
     if (e.key === 'Escape') closeLightbox();
@@ -208,7 +260,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') navigateLightbox(1);
 });
 
-// ─── NAVBAR SCROLL ──────────────────────────
+// ─── NAVBAR I MOBILE MENU ────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
@@ -224,7 +276,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ─── MOBILE MENU ────────────────────────────
 const mobileBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
 mobileBtn.addEventListener('click', () => {
@@ -238,7 +289,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ─── CONTACT FORM ───────────────────────────
+// ─── FORMULARZ KONTAKTOWY ────────────────────
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
