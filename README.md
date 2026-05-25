@@ -41,3 +41,19 @@ Strona podzielona jest na kilka sekcji:
 - Wszystkie zdjęcia to placeholdery – podmienisz je na własne screenshoty w pliku `script.js`
 
 ## 📁 Struktura plików
+
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+## ✍️ Dodatkowe informacje
+
+- Poza programowaniem piszę wiersze i książkę (miejsce na tekst jest w sekcji „Twórczość”).
+- Tworzę pixel art, modele 3D (Blender) i rysuję tradycyjnie.
+- Uczę się produkcji muzycznej (Reaper) i montażu wideo (DaVinci Resolve).
+- Aktywnie działam w Stowarzyszeniu **Siła Młodych**, współorganizowałem wydarzenie **Euro Orbita**.
+
+---
+
+**To jest moje portfolio – zawsze aktualne, zawsze moje.** Dzięki za odwiedziny! 🚀

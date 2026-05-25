@@ -179,7 +179,7 @@ function renderGallery(filter = 'all') {
         : galleryItems.filter(item => item.category === filter);
 
     galleryGrid.innerHTML = filteredItems.map((item, index) => {
-        const thumbSrc = item.images[0];  // pierwsze zdjęcie jako miniatura
+        const thumbSrc = item.images[0];
         return `
         <div class="gallery-item" data-index="${index}">
             <img src="${thumbSrc}" alt="${item.alt}" loading="lazy">
@@ -287,23 +287,6 @@ navLinks.querySelectorAll('a').forEach(link => {
         mobileBtn.classList.remove('open');
         navLinks.classList.remove('open');
     });
-});
-
-// ─── FORMULARZ KONTAKTOWY ────────────────────
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('.btn');
-    const original = btn.textContent;
-    btn.textContent = '✓ Wysłano!';
-    btn.style.background = '#00b894';
-    btn.style.boxShadow = '0 6px 28px rgba(0,184,148,0.5)';
-    contactForm.reset();
-    setTimeout(() => {
-        btn.textContent = original;
-        btn.style.background = '';
-        btn.style.boxShadow = '';
-    }, 2500);
 });
 
 // ─── START ──────────────────────────────────
