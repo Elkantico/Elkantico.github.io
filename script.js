@@ -1,58 +1,59 @@
-// ─── DANE PROJEKTÓW (wiele zdjęć na projekt) ────
 const galleryItems = [
     {
         id: 1,
         title: 'Chronossos',
         category: 'aplikacja-mobilna',
         images: [
-            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+1',
-            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+2',
-            'https://placehold.co/800x600/1a1a25/6c5ce7?text=Chronossos+3'
+            'img/chronossos/chronossos1.png',
+            'img/chronossos/chronossos2.png',
+            'img/chronossos/chronossos3.png',
+            'img/chronossos/chronossos4.png'
         ],
         alt: 'Aplikacja habit tracker',
-        description: 'Aplikacja mobilna typu habit tracker z zaawansowanym task managementem, kalendarzem, clipboardem i wieloma opcjami planowania. Projekt personalny.'
+        description: 'Aplikacja mobilna typu habit tracker z zaawansowanym task managementem, kalendarzem, clipboardem i wieloma opcjami planowania. (Flutter, HiveDB)'
     },
     {
         id: 2,
         title: 'All About Safety',
         category: 'game-dev',
         images: [
-            'https://placehold.co/800x600/1a1a25/00cec9?text=All+About+Safety+1',
-            'https://placehold.co/800x600/1a1a25/00cec9?text=All+About+Safety+2'
+            'img/aas/aas1.png',
+            'img/aas/ass2.png',
+            'img/aas/ass3.png',
+            'img/aas/ass4.png',
+            'img/aas/ass5.png'
         ],
         alt: 'Gra dyspozytora',
-        description: 'Gra, w której gracz wciela się w dyspozytora. Podejmujesz decyzje, zarządzasz kryzysami i dbasz o bezpieczeństwo. Stworzona w Unity.'
+        description: 'Gra, w której gracz wciela się w dyspozytora. Podejmujesz decyzje, zarządzasz kryzysami i dbasz o bezpieczeństwo. Stworzona w Godot. (gdscript, pixel art) – projekt w fazie finalizacji.'
     },
     {
         id: 3,
         title: 'WLC Włocławek',
         category: 'strona-internetowa',
         images: [
-            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+1',
-            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+2',
-            'https://placehold.co/800x600/1a1a25/fdcb6e?text=WLC+strona+3'
+            'img/wlc24/wlc1.png',
+            'img/wlc24/wlc2.png'
         ],
         alt: 'Strona klubu',
-        description: 'Przez 2 miesiące utrzymywałem i rozwijałem stronę internetową Włocławskiego Klubu (barter). Aktualizacje treści, poprawki techniczne.'
+        description: 'Przez 2 miesiące utrzymywałem i rozwijałem stronę internetową WLC24(w formie barteru), poprawki techniczne. (WordPress, PHP, CSS)'
     },
     {
         id: 4,
         title: 'Strona dla mechanika',
         category: 'strona-internetowa',
         images: [
-            'https://placehold.co/800x600/1a1a25/e17055?text=Mechanik+1',
-            'https://placehold.co/800x600/1a1a25/e17055?text=Mechanik+2'
+            'img/autoService/auto1.png',
+            'img/autoService/auto2.png'
         ],
         alt: 'Wizytówka warsztatu',
-        description: 'Prosta, nowoczesna strona-wizytówka dla warsztatu samochodowego. Zawiera galerię, cennik i formularz kontaktowy.'
+        description: 'Prosta, nowoczesna strona-wizytówka dla warsztatu samochodowego. (HTML, CSS, JavaScript)'
     },
     {
         id: 5,
         title: 'Praktyki e-commerce',
         category: 'aplikacja-internetowa',
         images: [
-            'https://placehold.co/800x600/1a1a25/74b9ff?text=E-commerce+1',
-            'https://placehold.co/800x600/1a1a25/74b9ff?text=E-commerce+2'
+            'img/e-commerce/inkubator.png'
         ],
         alt: 'Inkubator finansowy',
         description: '2‑miesięczne praktyki w inkubatorze finansowym we Włocławku. Tworzyłem nowe rozwiązania i automatyzacje (skrypty Python) dla e‑commerce.'
@@ -62,9 +63,8 @@ const galleryItems = [
         title: 'Unity – własna fizyka',
         category: 'game-dev',
         images: [
-            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+1',
-            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+2',
-            'https://placehold.co/800x600/1a1a25/a29bfe?text=Unity+Fizyka+3'
+            'img/unity/unity1.png',
+            'img/unity/unity2.png'
         ],
         alt: 'System poruszania',
         description: 'Przez 6 lat tworzyłem gry w Unity. Opracowałem własny system fizyki i assetów do poruszania się postaci – wykorzystywany w kilku prototypach.'
@@ -74,73 +74,61 @@ const galleryItems = [
         title: 'Finn & Bones (przeglądarkowa)',
         category: 'game-dev',
         images: [
-            'https://placehold.co/800x600/1a1a25/ff7675?text=Finn%26Bones+1',
-            'https://placehold.co/800x600/1a1a25/ff7675?text=Finn%26Bones+2'
+            'img/finn/finn1.png',
+            'img/finn/finn2.png'
         ],
         alt: 'Gra przeglądarkowa',
-        description: 'Gra przeglądarkowa inspirowana starą produkcją Finn & Bones. Zręcznościowa, z elementami logicznymi, napisana w JavaScript.'
+        description: 'Gra przeglądarkowa inspirowana starą produkcją Finn & Bones, gra tórowa. (HTML, CSS, JavaScript) – projekt w fazie finalizacji.'
     },
     {
         id: 8,
-        title: 'Strona z jedzeniem',
-        category: 'strona-internetowa',
+        title: 'Aplikacja TikTok+YT (Newspaper)',
+        category: 'aplikacja-mobilna',
         images: [
-            'https://placehold.co/800x600/1a1a25/55efc4?text=Food+1',
-            'https://placehold.co/800x600/1a1a25/55efc4?text=Food+2'
+            'img/newspaper/news1.png',
+            'img/newspaper/news2.png',
+            'img/newspaper/news3.png',
+            'img/newspaper/news4.png',
+            'img/newspaper/news5.png',
+            'img/newspaper/news6.png'
         ],
-        alt: 'Projekt kulinarny',
-        description: 'Personalny projekt strony do zamawiania jedzenia. Responsywny design, interaktywne menu i integracja z systemem zamówień.'
+        alt: 'Aplikacja społecznościowa',
+        description: 'Aplikacja mobilna łącząca funkcje TikToka i YouTube. Wkrótce kontraktowanie z gazetami – projekt w fazie finalizacji. (Flutter)'
     },
     {
         id: 9,
-        title: 'Aplikacja TikTok+YT',
+        title: 'MobbaFett',
         category: 'aplikacja-mobilna',
         images: [
-            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+1',
-            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+2',
-            'https://placehold.co/800x600/1a1a25/fab1a0?text=TikTok%2BYT+3'
+            'img/mobbafett/mob1.png',
+            'img/mobbafett/mob2.png'
         ],
-        alt: 'Aplikacja społecznościowa',
-        description: 'Aplikacja mobilna łącząca funkcje TikToka i YouTube. Wkrótce kontraktowanie z gazetami. Projekt w trakcie rozwoju.'
+        alt: 'Projekt MobbaFett',
+        description: 'Dodatkowy projekt aplikacji mobilnej. (HTML, CSS, JavaScript)'
     },
     {
         id: 10,
         title: 'System głosowań Euro Orbita',
         category: 'aplikacja-internetowa',
         images: [
-            'https://placehold.co/800x600/1a1a25/81ecec?text=Euro+Orbita+1',
-            'https://placehold.co/800x600/1a1a25/81ecec?text=Euro+Orbita+2'
+            'img/sejm/glos1.png',
+            'img/sejm/glos2.png',
+            'img/sejm/glos3.png'
         ],
         alt: 'Symulacja parlamentu',
-        description: 'System do głosowania na symulacje Sejmu i Senatu (Euro Orbita). Obsługuje ~300 uczestników, bezpieczny i wydajny backend (web app).'
-    },
-    {
-        id: 11,
-        title: 'Śledzenie wydarzeń – Siła Młodych',
-        category: 'aplikacja-mobilna',
-        images: [
-            'https://placehold.co/800x600/1a1a25/dfe6e9?text=Si%C5%82a+M%C5%82odych+1',
-            'https://placehold.co/800x600/1a1a25/dfe6e9?text=Si%C5%82a+M%C5%82odych+2'
-        ],
-        alt: 'Event tracker',
-        description: 'Aplikacja do śledzenia wydarzeń dla Stowarzyszenia „Siła Młodych”. Powiadomienia, kalendarz i lista uczestników.'
+        description: 'System do głosowania na symulacje Sejmu i Senatu (Euro Orbita). Obsługuje ~300 uczestników, bezpieczny i wydajny backend (web app). (HTML, CSS, JavaScript, PHP, MySQL)'
     }
 ];
 
-// ─── DANE DO SEKCJI TWÓRCZOŚCI ──────────────
 const pixelArtImages = [
-    { src: 'https://placehold.co/300x300/2d3436/fff?text=Pixel+1', alt: 'Pixel art 1' },
-    { src: 'https://placehold.co/300x300/2d3436/fff?text=Pixel+2', alt: 'Pixel art 2' },
-    { src: 'https://placehold.co/300x300/2d3436/fff?text=Pixel+3', alt: 'Pixel art 3' },
-    { src: 'https://placehold.co/300x300/2d3436/fff?text=Pixel+4', alt: 'Pixel art 4' }
-];
-const blenderImages = [
-    { src: 'https://placehold.co/300x300/636e72/fff?text=Blender+1', alt: 'Model 3D 1' },
-    { src: 'https://placehold.co/300x300/636e72/fff?text=Blender+2', alt: 'Model 3D 2' }
+    { src: 'pixelart/pixel1.png', alt: 'Pixel art 1' },
+    { src: 'pixelart/pixel2.png', alt: 'Pixel art 2' },
+    { src: 'pixelart/pixel3.png', alt: 'Pixel art 3' },
+    { src: 'pixelart/menu.gif', alt: 'Pixel art menu' }
 ];
 const drawingImages = [
-    { src: 'https://placehold.co/300x300/b2bec3/000?text=Rysunek+1', alt: 'Rysunek ołówkiem 1' },
-    { src: 'https://placehold.co/300x300/b2bec3/000?text=Rysunek+2', alt: 'Rysunek ołówkiem 2' }
+    { src: 'pen/art1.jpg', alt: 'Rysunek ołówkiem 1' },
+    { src: 'pen/art2.jpg', alt: 'Rysunek ołówkiem 2' }
 ];
 
 function fillMiniGallery(containerId, images) {
@@ -151,10 +139,27 @@ function fillMiniGallery(containerId, images) {
     ).join('');
 }
 fillMiniGallery('pixelGallery', pixelArtImages);
-fillMiniGallery('blenderGallery', blenderImages);
 fillMiniGallery('drawingGallery', drawingImages);
 
-// ─── GŁÓWNA GALERIA ─────────────────────────
+fetch('wiersz.txt')
+    .then(response => {
+        if (!response.ok) throw new Error('Brak pliku');
+        return response.text();
+    })
+    .then(text => {
+        const placeholder = document.getElementById('writingPlaceholder');
+        if (placeholder) {
+            placeholder.textContent = text;
+            placeholder.style.fontStyle = 'normal';
+        }
+    })
+    .catch(() => {
+        const placeholder = document.getElementById('writingPlaceholder');
+        if (placeholder) {
+            placeholder.textContent = 'Wklej tutaj swój wiersz lub fragment książki…';
+        }
+    });
+
 const galleryGrid = document.getElementById('galleryGrid');
 const filterBar = document.getElementById('filterBar');
 const lightbox = document.getElementById('lightbox');
@@ -206,7 +211,6 @@ filterBar.addEventListener('click', (e) => {
     }
 });
 
-// ─── LIGHTBOX ───────────────────────────────
 function openLightbox(projectIdx) {
     currentProjectIndex = projectIdx;
     currentImageIndex = 0;
@@ -260,7 +264,6 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') navigateLightbox(1);
 });
 
-// ─── NAVBAR I MOBILE MENU ────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
@@ -289,5 +292,61 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ─── START ──────────────────────────────────
+const track = document.getElementById('carouselTrack');
+const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+const prevBtn = document.getElementById('carouselPrev');
+const nextBtn = document.getElementById('carouselNext');
+const dotsContainer = document.getElementById('carouselDots');
+
+let currentSlide = 0;
+
+slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('carousel-dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+});
+
+const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+
+function updateCarousel() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+    });
+}
+
+function goToSlide(index) {
+    if (index < 0 || index >= slides.length) return;
+    currentSlide = index;
+    updateCarousel();
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+let touchStartX = 0;
+track.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+track.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+        if (diff > 0) nextSlide();
+        else prevSlide();
+    }
+});
+
 renderGallery('all');
