@@ -104,7 +104,7 @@ const galleryItems = [
             'img/mobbafett/mob2.png'
         ],
         alt: 'Projekt MobbaFett',
-        description: 'Dodatkowy projekt aplikacji mobilnej. (HTML, CSS, JavaScript)'
+        description: 'Personalny projekt aplikacji webowej. (HTML, CSS, JavaScript)'
     },
     {
         id: 10,
